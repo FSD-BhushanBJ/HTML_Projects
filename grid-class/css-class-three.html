@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+            
+            
+            
+            
+
+        }
+        .box-one{
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+            grid-column: 1/ span 3;
+            text-align: left;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+            
+        }
+        .box-two{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(87, 195, 191);
+            grid-column: 1/ span 2;
+            grid-row: 2/span ;
+            
+            
+        }
+        .box-three{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(43, 113, 226);
+            grid-column: 1/ span 2;
+            
+            
+        }
+        .box-four{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(226, 43, 202);
+            grid-column: 3;
+            grid-row: 2;
+            
+            
+        }
+        .box-five{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(226, 43, 70);
+            
+            
+        }
+        .box-six{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(43, 226, 89);
+            grid-column: 1 / span 2 ;
+            grid-row: 4/ span  ;
+            
+        }
+        .box-seven{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(226, 214, 43);
+            
+            
+        }
+        .box-eight{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(226, 43, 43);
+            grid-column: 1 / span 3;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--Box-one-->
+        <div class="box-one"><h1>CSS Grid</h1></div>
+        <!--Box two-->
+        <div class="box-two"><h1>Box two</h1></div>
+        <!--Box Three-->
+        <div class="box-three"><h1>Box three</h1></div>
+        <!--Box Four-->
+        <div class="box-four"><h1>Box four</h1></div>
+        <!--Box five-->
+        <div class="box-five"><h1>Box five</h1></div>
+        <!--Box Six-->
+        <div class="box-six"><h1>Box six</h1></div>
+        <!--Box Seven-->
+        <div class="box-seven"><h1>Box seven</h1></div>
+        <!--Box Eight-->
+        <div class="box-eight"><h1>Box eight</h1></div>
+    </div>
+</body>
+</html>
