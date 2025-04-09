@@ -1,12 +1,12 @@
-numberone = 10
-numbertwo = 20
+numberone = 50
+numbertwo = 30
 sum = numberone + numbertwo
-product = numberone * numbertwo
+#product = numberone * numbertwo
 
 
 
 #print(sum)
-print(numberone)
+print(numberone + numbertwo)
 
 print("Enter a number:")
 number = input()
