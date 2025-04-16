@@ -10,4 +10,9 @@ print(numberone + numbertwo)
 
 print("Enter a number:")
 number = input()
+
+total = number + 11
+print(total)
+
+print(number)
 # print(number)

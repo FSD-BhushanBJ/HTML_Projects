@@ -9,4 +9,6 @@ int main(){
 
     double x = (float)22/7;
     printf("%.2f",x);
+
+
 }
