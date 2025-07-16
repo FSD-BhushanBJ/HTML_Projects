@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type Detector</title>
+    <style>
+        .main-container {
+            width: 550px;
+            height: 500px;
+            background-color: lightcoral;
+
+            justify-items: last baseline;
+        }
+
+        label {
+            font-size: 35px;
+        }
+        .display{
+            width: 500px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Data Type Detector</h1>
+        <br>
+        <label for="result3">Enter Anything :</label>
+        <br>
+        <input type="text" name="" id="result3">
+        <br>
+        <button onclick="checkDataType()">Check Data Type</button>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
+    </div>
+    <script>
+        function checkDataType() {
+            let string = "Hello World"
+            let dataType1 = typeof string
+            let result3 = "Value is  :" + string + "\n dataType is " + dataType1
+            alert("Value is  :" + string + "\n dataType is " + dataType1);
+            document.getElementById('display').innerHTML = result3;
+        }
+    </script>
+</body>
+
+</html>
+
+

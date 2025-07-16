@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-else Nested</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+          
+        }
+        .main-container{
+            height: 100%;
+            width: 100%;
+            background-color: lightcoral;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Login</h1>
+        <label for="input">UserName</label>
+        <input type="text" id="input">
+        <br>
+        <label for="input">Password</label>
+        <input type="password" id="input2">
+        <br>
+        <button onclick="CheckLogin()">Login</button>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+        function CheckLogin(){
+            // get user input
+            let user = document.getElementById("input").value;
+            let pass = document.getElementById("input2").value;
+            let result = "";
+            // age checker 
+
+            if( user == "Bhushan@123"){
+                if(pass = "12345678"){
+                    result = "Password is Correct Login Successfull"
+                }
+                else{
+                    result = "Invalid password"
+                }
+            }
+        //    invalid username
+            else{
+                result = "invalid username";
+            }
+            // display reslt
+            document.getElementById("display").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

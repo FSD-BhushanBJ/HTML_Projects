@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Withdrawn</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>ATM Withdrawal</h1>
+        <h3>Current Balance</h3>
+        <p id="showbal"></p>
+        <input type="number" placeholder="Enter amount to withdrawn" id="input">
+        <button onclick="withDrawn()">Withdrawn</button>
+        <p id="funds"></p>
+    </div>
+    <script>
+        let balance = 10000
+        document.getElementById("showbal").innerHTML = balance
+        
+        
+      function withDrawn(){
+        let amount = document.getElementById("input").value;
+        
+
+        if(amount > balance){
+           if(amount > 0){
+            if (amount % 100 == 0){
+                balance = balance - amount;
+                document.getElementById("showbal").innerHTML = balance;
+            }else{
+                alert("more than 100");
+            }
+           } else
+        }
+    }
+    </script>
+</body>
+</html>

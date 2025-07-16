@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Data Type</title>
+    <style>
+        .main-container{
+            width: 600px;
+            height: 500px;
+            background-color: lightcoral;
+            align-items: center;
+            justify-items: center;
+            padding-top: 50px;
+        }
+        .display{
+            width: 500px;
+            height: 300px;
+            background-color: aliceblue;
+            
+        }
+        button{
+            width: 350px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>JavaScript Data Type</h1>
+        <button onclick="checkD()">Show Data Type</button>
+        <br>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+    function checkD(){
+        // number
+    let a = 42;
+    let dataType = typeof a;
+    alert("Value is  :" + a + "\n dataType is " + dataType);
+    let result2 = "Value is  :" + a + "\n dataType is " + dataType
+    document.getElementById('display').innerHTML = result2;
+
+
+
+        // boolean
+    let boolean = true
+    let dataType2 = typeof boolean;
+    let result = "Value is  :" + boolean + "\n dataType is " + dataType2
+    alert("Value is  :" + boolean + "\n dataType is " + dataType2);
+    document.getElementById('display').innerHTML = result;
+
+        // string
+    let string = "Hello World"
+    let dataType1 = typeof string
+    let result3 = "Value is  :" + string + "\n dataType is " + dataType1
+    alert("Value is  :" + string + "\n dataType is " + dataType1);
+    document.getElementById('display').innerHTML = result3;
+    }
+   
+    
+    
+    
+    
+    
+    
+</script>
+</body>
+</html>

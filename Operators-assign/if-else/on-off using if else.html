@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bulb</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        .main-container{
+            width: 200px;
+            height: 300px;
+            margin-left: 635px;
+            margin-top: 100px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .click{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+        }
+        button{
+            height: 80px;
+            width: 198px;
+            gap: 5px;
+            font-size: 25px;
+            color: yellow;
+            border-radius: 20px;
+            border-style: solid;
+            border-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button:hover{
+            background-color: lightgoldenrodyellow;
+        }
+        .on{
+            background-color: green;
+    
+        }
+        .off{
+            background-color: red;
+        }
+        img{
+            height: 500px;
+            width: 400px;
+        }
+        input{
+            height: 150px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click on <mark>'Check'</mark> Button to turn it on</h1>
+    
+    <div class="main-container">
+        <div>
+            <label for="number">Enter a number</label>
+            <input type="number" id="first-input">
+        </div>
+        <br>
+        <button onclick="changeImage()" type="button" class="on">Check</button>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25C0t7Ak4B5qWwT4nUMqlbGqF51wUK6xMyw&s" id="Myimage" />
+        <div class="click">
+        
+        <!-- <button onclick="imageChange()" class="off">OFF</button> -->
+    </div>
+    </div>
+    <script>
+        
+        function changeImage(){
+           let x = Number(document.getElementById("first-input").value);
+            if(x % 2 == 0){
+                document.getElementById("Myimage").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25C0t7Ak4B5qWwT4nUMqlbGqF51wUK6xMyw&s";
+            }
+            else{
+                document.getElementById("Myimage").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy2WAnExtUFXg74jTjfvC7aReqFGm5TFdZ4g&s";
+            }
+
+
+        }
+        // function imageChange(){
+        //     document.getElementById('image').src='../assets/Bulb is Off.png';
+        // }
+    </script>
+</body>
+</html>

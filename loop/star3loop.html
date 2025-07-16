@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Patern Loop</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="showStars()"></button>
+    <pre id="display"></pre>
+    <script>
+        function showStars(){
+            let number = Number(document.getElementById("input").value)
+            let pattern = "";
+            
+            for (let i = 1;i <= number;i++){
+                for (let j = 1; j <= (number - i); j++){
+                    pattern += " ";
+                }
+                for(let k = 1; k <= i;k++){
+                    pattern += "^-*"
+                }
+                pattern +="\n";
+             
+            }
+            console.log(pattern)
+            document.getElementById("display").innerHTML += pattern
+        }
+    </script>
+</body>
+</html>

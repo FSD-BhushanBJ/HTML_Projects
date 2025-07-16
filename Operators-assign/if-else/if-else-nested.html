@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-else Nested</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0
+            ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <label for="input">Enter a number</label>
+        <input type="text" id="input">
+        <br>
+        <button onclick="CheckNum()">Check</button>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+        function CheckNum(){
+            let num = Number (document.getElementById("input").value);
+            let result = "";
+            if( num == 0){
+                result = "Number is neutral";
+            }
+           
+            else{
+                if ( num > 0){
+                result = "Number is Positive";
+            } else{
+                result = "Number is Negative"
+            }
+            }
+            document.getElementById("display").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Numbers</title>
+</head>
+<body>
+    <input type="number">
+    <button onclick="sumevenNum()"></button>
+    <button onclick="sumoddNum()"></button>
+    <p id="display"></p>
+    <script>
+        function sumevenNum(){
+            let sum = 0;
+            for (let number = 2; number <= 50; number++){
+                if(number % 2 === 0){
+                    sum = sum + number;
+                    console.log(number);
+                }
+            }
+            document.getElementById("display").innerHTML = "The sum of number between 2 to 50 is" + sum;
+        }
+        function sumoddNum(){
+            let sum = 0;
+            for (let number = 2; number <= 50; number++){
+                if(number % 2 != 0){
+                    sum = sum + number;
+                    console.log(number);
+                }
+            }
+            document.getElementById("display").innerHTML = "The sum of number between 2 to 50 is" + sum;
+        }
+    </script>
+</body>
+</html>

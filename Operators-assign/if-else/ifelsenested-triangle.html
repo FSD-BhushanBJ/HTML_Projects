@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-else Nested</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .main-container{
+            height: 100%;
+            width: 50%;
+            display: flex   ;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Voter Eligibility</h1>
+        <label for="input">Enter sight one</label>
+        <input type="text" id="input">
+        <br>
+        <label for="input">Enter sight two</label>
+        <input type="text" id="input">
+        <br>
+        <label for="input">Enter sight three</label>
+        <input type="text" id="input">
+        <button onclick="CheckVote()">Check</button>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+        function CheckTriangle(){
+            // get user input
+            let sight = Number (document.getElementById("input").value);
+            let result = "";
+            // age checker 
+
+            if( sight == 18){
+                result = "Voter is Eligible";
+            }
+        //    eligible and not-elgible
+            else{
+                if ( age < 18 ){
+                result = "Voter is Not-Eligible";
+            } else{
+                result = "Ready to vote"
+            }
+            }
+            // display on html
+            document.getElementById("display").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

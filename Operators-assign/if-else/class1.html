@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operators</title>
+</head>
+<body>
+    <div class="main-container">
+        <h2>student Marks Calculator</h2>
+        <div class="dis1" id="math"></div>
+        <div class="dis2" id="science"></div>
+        <button onclick="totalMarks()"></button>
+    </div>
+    <script>
+        
+        function totalMarks(){
+        let mathsmarks = 5000;
+        let sciencemarks = 500;
+        let total = 5000;
+
+            total = total - mathsmarks;
+            
+            total += sciencemarks;
+            alert(total)
+            // document.getElementById("science").innerHTML = total;
+        }
+    </script>
+</body>
+</html>
